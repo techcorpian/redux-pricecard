@@ -8,7 +8,7 @@ function App() {
   const productData = useSelector((store) => store.products.products);
 
   useEffect(() => {
-    fetch("http://localhost:5175/products.json")
+    fetch("https://arrow-reduxpricecard.netlify.app/products.json")
       .then((response) => response.json())
       .then((result) => {
         if (Array.isArray(result.products)) {
